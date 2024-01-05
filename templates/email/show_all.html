@@ -1,0 +1,23 @@
+{% extends '_base.html' %} {% block content %}
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Email</th>
+      <th scope="col">Score</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for email in emails %}
+    <tr>
+      <td>{{ forloop.counter}}</td>
+      <td>{{email.email}}</td>
+      <td>{{ email.score }}</td>
+      <td>{{ email.status }}</td>
+    </tr>
+  </tbody>
+  {% endfor %}
+</table>
+{% endblock content %}

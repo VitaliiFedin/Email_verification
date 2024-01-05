@@ -1,6 +1,6 @@
 # Email check application
 __________________________________________________________________
-
+This application use Hunter.io to check email. For more information check [documentation](https://hunter.io/api-documentation/v2).
 ## How to start
 __________________________________________________________________
 Firstly, clone project:
